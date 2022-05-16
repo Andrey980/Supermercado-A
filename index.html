@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado A</title>
+    <link rel="shortcut icon" href="assets/imagens/logoA.png" type="image/X-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+        <h1 class="cabecalho__logo"><a href="#inicio"><span>Supermercado</span> A</a></h1>
+        <p class="cabecalho__perfil">Login</p>
+        <button class="cabecalho__notificacao" aria-label="Notificação"><i class="fa-solid fa-cart-shopping"></i></button>
+    </header>
+    <nav class="menu-lateral">
+        <img src="assets/imagens/logoA.png" alt="Logo Supermercado A" class="menu-lateral__logo">
+        <a href="#inicio" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Início</a>
+        <a href="#carnes" class="menu-lateral__link menu-lateral__link--icon menu-lateral__link--ativo">Carnes/Frango</a>
+        <a href="#margarinas" class="menu-lateral__link menu-lateral__link--icon menu-lateral__link--ativo">Margarinas</a>
+        <a href="#titulo-graos" class="menu-lateral__link menu-lateral__link--icon menu-lateral__link--ativo">Grãos</a>
+        <a href="#titulo-temperos" class="menu-lateral__link menu-lateral__link--icon menu-lateral__link--ativo">Temperos</a>
+        <a href="#doces" class="menu-lateral__link menu-lateral__link--icon menu-lateral__link--ativo">Doces</a>
+        <a href="#bebidas" class="menu-lateral__link menu-lateral__link--icon menu-lateral__link--ativo">Bebidas</a>
+        <a href="#higiene" class="menu-lateral__link menu-lateral__link--icon menu-lateral__link--ativo">Higiene e <br>limpeza</a>
+        <a href="#verduras" class="menu-lateral__link menu-lateral__link--icon menu-lateral__link--ativo">Verduras e <br>Legumes</a>
+        <a href="#frutas" class="menu-lateral__link menu-lateral__link--icon menu-lateral__link--ativo">Frutas</a>
+        <a href="#peixes" class= "menu-lateral__link menu-lateral__link--icon menu-lateral__link--ativo">Peixes e <br>derivados</a>
+        <a href="#contato" class= "menu-lateral__link menu-lateral__link--contato menu-lateral__link--ativo" id="menu-lateral--contato">Contato</a>
+    </nav>
+    <main class="principal">
+        <button><a href="#cabecalho" id="botao__scroll">^</a></button>
+        <h2 class="titulo-pagina" id="inicio">Início</h2>
+        <article class="cartao cartao--destaque destaque-video">
+            <img src="assets/imagens/banner.jpg" alt="Banner do cartao" class="cartao__imagem cartao__imagem--mobile">
+            <img src="assets/imagens/banner-desktop.webp" alt="Banner do cartao" class="cartao__imagem cartao__imagem--desktop">
+            <div class="cartao__conteudo">
+                <p class="cartao__destaque">Os Melhores Preços</p>
+                <h3 class="cartao__titulo">Supermercado A</h3>
+                <a href="#carnes" class="cartao__botao cartao__botao--play cartao__botao--destaque">Explorar Agora</a>
+            </div>
+        </article>
+        
+        <section class="secao secao-carne">
+            <h3 class="titulo-secao" id="carnes">Carnes/Frango</h3>
+            <article class="cartao">
+                <img src="assets/imagens/img1.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Picanha Friboi tradicional</h3>
+                    <p class="cartao__perfil"> R$ 36,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img2.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Fraldinha Friboi</h3>
+                    <p class="cartao__perfil">R$ 36,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img3.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Contrafilé pedaço</h3>
+                    <p class="cartao__perfil">R$ 41,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img4.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Paleta de cordeiro Do Chef</h3>
+                    <p class="cartao__perfil">R$ 45,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img5.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Cupim Friboi</h3>
+                    <p class="cartao__perfil">R$ 36,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img6.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Picanha suína Pamplona temperada</h3>
+                    <p class="cartao__perfil">R$ 26,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img7.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Costela suína Perdigão</h3>
+                    <p class="cartao__perfil">R$ 21,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img8.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Bisteca suína Sadia</h3>
+                    <p class="cartao__perfil">R$ 17,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img9.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Coxinha da asa de frango</h3>
+                    <p class="cartao__perfil">R$ 14,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img10.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Linguiça toscana Seara</h3>
+                    <p class="cartao__perfil">R$ 15,29/Kg/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img11.png" alt="" class="cartao__imagem" id="linguica-calabresa">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Linguiça calabresa defumada Seara</h3>
+                    <p class="cartao__perfil">R$ 18,59/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="secao secao-margarina">
+            <h3 class="titulo-secao" id="margarinas">Margarinas</h3>
+            <article class="cartao">
+                <img src="assets/imagens/img12.png" alt="" class="cartao__imagem" id="margarina">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Margarina Qualy tradicional</h3>
+                    <p class="cartao__perfil">R$ 4,99</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="secao secao-graos">
+            <h3 class="titulo-secao" id="titulo-graos">Grãos</h3>
+            <article class="cartao">
+                <img src="assets/imagens/img13.png" alt="" class="cartao__imagem" id="graos">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Arroz branco Blue Ville</h3>
+                    <p class="cartao__perfil">R$ 22,98</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="secao secao-temperos">
+            <h3 class="titulo-secao" id="titulo-temperos">Temperos</h3>
+            <article class="cartao">
+                    <img src="assets/imagens/img14.png" alt="" class="cartao__imagem" id="temperos">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Azeite de oliva Gallo clássico extra virgem</h3>
+                    <p class="cartao__perfil">R$ 19,99</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="secao secao-doces">
+            <h3 class="titulo-secao" id="doces">Doces</h3>
+            <article class="cartao">
+                <img src="assets/imagens/img15.png" alt="" class="cartao__imagem" id="leite-moca">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Leite condensado Moça semidesnatado</h3>
+                    <p class="cartao__perfil">R$ 4,69</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img16.png" alt="" class="cartao__imagem" id="lacta-bar">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Chocolate em tablete Lacta</h3>
+                    <p class="cartao__perfil">R$ 4,19</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img17.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Chocolate Lindt Lindor Milk ou Swiss</h3>
+                    <p class="cartao__perfil">R$ 19,90</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="secao secao-bebidas">
+            <h3 class="titulo-secao" id="bebidas">Bebidas</h3>
+            <article class="cartao">
+                <img src="assets/imagens/img18.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Refrigerante H2OH! 1L</h3>
+                    <p class="cartao__perfil">R$ 4,99</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img19.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Cerveja Bohemia puro malte</h3>
+                    <p class="cartao__perfil">R$ 2,49</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img20.png" alt="" class="cartao__imagem cartao__imagem--vinhos" >
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Vinho Espumante Casa Perini moscatel branco</h3>
+                    <p class="cartao__perfil">R$ 46,99
+                    </p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img21.png" alt="" class="cartao__imagem cartao__imagem--vinhos">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Vinho Espumante Salton moscatel branco</h3>
+                    <p class="cartao__perfil">R$ 29,90</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img22.png" alt="" class="cartao__imagem cartao__imagem--vinhos">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Vinho Salton Intenso merlot tinto</h3>
+                    <p class="cartao__perfil">R$ 31,90</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img23.png" alt="" class="cartao__imagem cartao__imagem--vinhos">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Vinho Frisante Mioranza suave rosé</h3>
+                    <p class="cartao__perfil">R$ 19,90</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img24.png" alt="" class="cartao__imagem cartao__imagem--vinhos">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Vinho Frances Bois Mirail Rouge tinto</h3>
+                    <p class="cartao__perfil">31,90</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img25.png" alt="" class="cartao__imagem cartao__imagem--vinhos">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Vinho Chileno Tres Toros cabernet sauvignon tinto</h3>
+                    <p class="cartao__perfil">R$ 29,90</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img26.png" alt="" class="cartao__imagem cartao__imagem--vinhos">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Vinho Português Terra Mãe tinto</h3>
+                    <p class="cartao__perfil">R$ 30,90</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="secao secao-higiene">
+            <h3 class="titulo-secao" id="higiene">Higiene e Limpeza</h3>
+            <article class="cartao">
+                <img src="assets/imagens/img27.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Kit enxaguante bucal Colgate Plax Total</h3>
+                    <p class="cartao__perfil">R$ 19,69</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img28.png" alt="" class="cartao__imagem" id="cartao__imagem--toalha-umedecida">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Kit toalha umedecida Johnson’s</h3>
+                    <p class="cartao__perfil">R$ 32,89</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img29.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Lava roupas concentrado Ariel fragrâncias</h3>
+                    <p class="cartao__perfil">R$ 17,90</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img30.png" alt="" class="cartao__imagem" id="veja">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Limpador Veja Gold multiuso original c/ 10% desconto</h3>
+                    <p class="cartao__perfil">R$ 2,99</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img31.png" alt="" class="cartao__imagem" id="papel-neve">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Papel higiênico Neve folha dupla ou tripla c/ 4 unid.</h3>
+                    <p class="cartao__perfil">R$ 6,99</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="secao secao-verdura">
+            <h3 class="titulo-secao" id="verduras">Verduras e Legumes</h3>
+            <article class="cartao">
+                <img src="assets/imagens/img32.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Abobrinha italiana</h3>
+                    <p class="cartao__perfil">R$ 1,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img33.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Alho Roxo</h3>
+                    <p class="cartao__perfil">R$ 2,89/100g</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img34.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Batata doce rosada</h3>
+                    <p class="cartao__perfil">R$ 1,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img35.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Berinjela</h3>
+                    <p class="cartao__perfil">R$ 3,89/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img36.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Cebola</h3>
+                    <p class="cartao__perfil">R$ 4,49/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img37.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Cenoura</h3>
+                    <p class="cartao__perfil">R$ 2,29/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img42.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Mandioquinha</h3>
+                    <p class="cartao__perfil">R$ 6,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img44.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Pepino japonês</h3>
+                    <p class="cartao__perfil">R$ 2,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img45.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Pimentão verde</h3>
+                    <p class="cartao__perfil">R$ 3,79/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img46.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Tomate carmem</h3>
+                    <p class="cartao__perfil">R$ 3,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img47.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Tomate Grape Mel Trebeschi 180g</h3>
+                    <p class="cartao__perfil">R$ 2,39</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="secao secao-frutas">
+            <h3 class="titulo-secao" id="frutas">Frutas</h3>
+            <article class="cartao">
+                <img src="assets/imagens/img57.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Manga tommy</h3>
+                    <p class="cartao__perfil">R$ 3,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img58.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Maracujá azedo</h3>
+                    <p class="cartao__perfil">R$ 5,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img59.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Mexerica ponkan</h3>
+                    <p class="cartao__perfil">R$ 2,89/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img60.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Pera williams</h3>
+                    <p class="cartao__perfil">R$ 7,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img61.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Uva branca bandeja 500g</h3>
+                    <p class="cartao__perfil">R$ 5,99</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img62.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Uva preta bandeja 500 g</h3>
+                    <p class="cartao__perfil">R$ 6,49</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img49.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Abacate</h3>
+                    <p class="cartao__perfil">R$ 4,59/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img50.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Caqui fuyu</h3>
+                    <p class="cartao__perfil">R$ 4,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img51.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Goiaba vermelha</h3>
+                    <p class="cartao__perfil">R$ 3,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img52.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Laranja pera</h3>
+                    <p class="cartao__perfil">R$ 2,79/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img53.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Limão taiti</h3>
+                    <p class="cartao__perfil">R$ 1,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img54.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Maçã Fuji</h3>
+                    <p class="cartao__perfil">R$ 4,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img55.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Maçã Senninha pacote 1kg</h3>
+                    <p class="cartao__perfil">R$ 4,49</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img56.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Mamão papaya</h3>
+                    <p class="cartao__perfil">2,99/Unid</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img48.png" alt="" class="cartao__imagem" id="abacaxi">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Abacaxi pérola</h3>
+                    <p class="cartao__perfil">R$ 5,39/Unid</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="secao secao-peixes">
+            <h3 class="titulo-secao" id="peixes">Peixes e Derivados</h3>
+            <article class="cartao">
+                <img src="assets/imagens/img38.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Tilápia inteira fresca</h3>
+                    <p class="cartao__perfil">R$ 17,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img39.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Tambaqui de cativeiro inteiro fresco</h3>
+                    <p class="cartao__perfil">R$ 21,79/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img40.png" alt="" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Pintado de cativeiro inteiro fresco</h3>
+                    <p class="cartao__perfil">R$ 28,99/Kg</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="assets/imagens/img41.png" alt="" class="cartao__imagem" id="camarao-oceani">
+                <div class="cartao__conteudo">
+                    <h3 class="cartao__titulo">Camarão Oceani descascado cozido congelado 400 g</h3>
+                    <p class="cartao__perfil">R$ 39,99</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+        </section>
+        
+        <section class="secao-contato">
+            <h3 class="titulo-secao" id="contato">Contato</h3>
+            <article class="cartao">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.6014178899354!2d-46.45362230947186!3d-23.499719774042127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce616eb6243fcb%3A0xf58f03b4a1ebef94!2sUniversidade%20Cruzeiro%20do%20Sul!5e0!3m2!1sen!2sbr!4v1652583082616!5m2!1sen!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+                <article class="contato-info">
+
+                    <div id="contato-info__maisinfo">
+                        <div>
+                            <i class="fa-solid fa-home"></i>
+                            <span>
+                                <h5>Rua XYZ, Número 123</h5>
+                                <p>São Paulo, BR</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                <h5>+55 11 999999999</h5>
+                                <p>Segunda a Domingo, 10hs às 18hs</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>
+                                <h5>supermercadoA@gmail.com</h5>
+                            </span>
+                        </div>
+                    </div>
+
+                    <form method="post">
+                        <input type="text" name="name" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="subject" placeholder="Assunto" required>
+                        <textarea rows="8" name="message" placeholder="Mensagem" required></textarea>
+                        <button type="submit" class="hero-btn">Enviar Mensagem</button>
+                    </form>
+                </article>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div id="brands-container">
+            <ul>
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div id="names-container">
+            <ul>
+                <li>Andrey Valdeci 30306833</li>
+                <li>Gabriel Andrade 29752957</li>
+                <li>Larissa Sales 29203601</li>
+                <li>Michael Dyeik 30298920</li>
+                <li>Victor Mitsuo 30339774</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/5ab4296b74.js" crossorigin="anonymous"></script>
+</body>
+</html>

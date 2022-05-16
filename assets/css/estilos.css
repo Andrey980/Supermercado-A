@@ -1,0 +1,907 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #4d6b91;
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1300px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #053e69;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    position: relative;
+    top: 0;
+}
+
+.cabecalho__menu i::before {
+    content: "\e904";
+    font-size: 24px;
+}
+
+.cabecalho__notificacao i::before {
+    content: "\f07a";
+    font-size: 24px;
+}
+
+.cabecalho__logo {
+    width: 20%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    text-shadow: 1px 1px #074b80;
+    color: white;
+}
+
+.cabecalho__logo span {
+    color: #0972c3;
+}
+
+.cabecalho__perfil {
+    display: none;
+}
+
+
+@media screen and (min-width: 1300px) {
+
+    .cabecalho {
+        width: 100%;
+        background-color: #053e69;
+        display: grid;
+        column-gap: 32px;
+        grid-template-columns: auto 1fr auto;
+        padding: 16px 60px;
+        height: 80px;
+        box-sizing: border-box;
+        grid-column: 2;
+    }
+
+    .cabecalho__menu {
+        display: none;
+    }
+
+    .cabecalho__logo {
+        display: block;
+        width: 100%;
+        font-weight: 700;
+        font-size: 25px;
+        text-shadow: 1px 1px #ddd;
+    }
+
+    .cabecalho__logo span {
+        text-shadow: 1px 1px #3c638d;
+    }
+
+    .cabecalho__perfil {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 8px;
+        align-items: center;
+        justify-self: flex-end;
+        color: #fff;
+        padding: 8px 32px;
+        border-right: 1px solid #95999C;
+    }
+
+    .cabecalho__perfil::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../imagens/kisspng-user-profile-computer-icons-profile-5ac0924526cda6.172054181522569797159.png);
+        background-color: #fff;
+        border-radius: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .cabecalho__perfil::after {
+        content: "\f07a";
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+
+    .cabecalho {
+        position: sticky;
+        top: 0;
+    }
+
+    .menu-lateral {
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.16);
+        padding: 10px;
+    }
+
+    .menu-lateral #menu-lateral--contato {
+        margin-bottom: 30px;
+    }
+
+    #botao__scroll {
+        display: none;
+    }
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: #053e69;
+    width: 75vw;
+    height: 100vh;
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
+}
+
+.menu-lateral__logo {
+    width: 118px;
+    align-self: center;
+    padding: 16px;
+}
+
+.menu-lateral__link {
+    height: 64px;
+    color: #fff;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-lateral__link--ativo:active {
+    color: #FFFFFF;
+    padding-left: 56px;
+    border-left: 8px solid #FFFFFF;
+}
+
+@media screen and (min-width: 1300px) {
+    .menu-lateral__link--ativo:hover {
+        color: #FFFFFF;
+        padding-left: 56px;
+        border-left: 8px solid #FFFFFF;
+    }
+
+}
+
+.menu-lateral__link::before {
+    content: "\e900";
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+}
+
+.menu-lateral__link--inicio::before {
+    content: "\e902";
+}
+
+.menu-lateral__link--icon::before {
+    content: "\e901";
+}
+
+.menu-lateral__link--contato::before {
+    content: "\e903";
+}
+
+
+@media screen and (min-width: 1300px) {
+    .menu-lateral {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+}
+
+.principal {
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.titulo-pagina {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titulo-secao {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+    .principal #botao__scroll {
+        font-weight: bold;
+        position: fixed;
+        right: 10px;
+        bottom: 50px;
+        background-color: #053e69;
+        width: 32px;
+        border-radius: 50%;
+    }
+
+    .cabecalho__logo {
+        width: 40%;
+    }
+
+    .cartao__imagem {
+        width: 70%;
+        display: table;
+        margin: auto;
+    }
+
+    .secao-carne img {
+        width: 95%;
+        height: 300px;
+    }
+
+    .secao-margarina .cartao #margarina {
+        width: 95%;
+        height: 300px;
+    }
+
+    .secao-graos .cartao #graos {
+        width: 95%;
+    }
+
+    .secao-doces .cartao img {
+        width: 70%;
+    }
+
+    .secao-doces .cartao #lacta-bar {
+        height: 300px;
+    }
+
+    .secao-bebidas .cartao img {
+        width: 95%;
+    }
+
+    .secao-bebidas .cartao .cartao__imagem--vinhos {
+        width: 70%;
+    }
+
+    .secao-higiene .cartao #cartao__imagem--toalha-umedecida {
+        width: 95%;
+    }
+
+    .secao-higiene .cartao #papel-neve {
+        width: 100%;
+        height: 300px;
+    }
+
+    .secao-verdura .cartao img {
+        width: 95%;
+        height: 300px;
+    }
+
+    .secao-frutas .cartao img {
+        width: 95%;
+        height: 300px;
+    }
+
+    .secao-frutas .cartao #abacaxi {
+        width: 60%;
+    }
+
+    .secao-peixes .cartao img {
+        width: 95%;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .principal {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "titulo-pagina titulo-pagina titulo-pagina"
+            "destaque-video destaque-video destaque-video"
+            "secao-carne secao-carne secao-carne"
+            "secao-margarina secao-margarina secao-margarina"
+            "secao-graos secao-graos secao"
+            "secao-temperos secao-temperos secao-temperos"
+            "secao-doces secao-doces secao-doces"
+            "secao-bebidas secao-bebidas secao-bebidas"
+            "secao-higiene secao-higiene secao-higiene"
+            "secao-verdura secao-verdura secao-verdura"
+            "secao-frutas secao-frutas secao-frutas"
+            "secao-peixes secao-peixes secao-peixes"
+            "secao-contato secao-contato secao-contato"
+        ;
+        padding: 16px 60px;
+        grid-column: 2;
+        column-gap: 0;
+    }
+
+    .titulo-secao {
+        grid-column: span 4;
+    }
+
+}
+
+.cartao {
+    width: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+    background-color: #707b99;
+}
+
+.cartao__imagem--desktop {
+    display: none;
+}
+
+.cartao--destaque {
+    margin-bottom: 16px;
+}
+
+.cartao__conteudo {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+
+.cartao__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.cartao__perfil {
+    color: #fff;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.cartao__info {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.cartao__info--visualizacao::before {
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.cartao__botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0480DC;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    justify-self: flex-end;
+    grid-column: 2;
+}
+
+.cartao__botao--destaque {
+    grid-column: 1;
+}
+
+.cartao__botao--play::before {
+    content: "\e901";
+    font-size: 24px;
+}
+
+.cartao__botao--destaque {
+    width: 100%;
+}
+
+.cartao__botao--destaque::before {
+    margin-right: 8px;
+}
+
+.cartao--recentes {
+    display: none;
+}
+
+.cartao__imagem {
+    height: 450px;
+}
+
+#margarina {
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    display: table;
+}
+
+#graos {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    display: table;
+}
+
+#temperos {
+    height: 400px;
+    width: 150px;
+    margin: auto;
+    display: table;
+}
+
+@media screen and (min-width: 1300px) {
+    .cartao {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .cartao--destaque {
+        margin-bottom: 0;
+    }
+
+    .cartao__imagem--mobile {
+        display: none;
+    }
+
+    .cartao__imagem--desktop {
+        display: block;
+    }
+
+    .cartao__imagem {
+        height: 250px;
+    }
+
+    .cartao__botao--destaque {
+        grid-column: auto;
+        padding: 16px 8px;
+    }
+
+    .cartao--recentes .cartao__titulo {
+        grid-column: auto;
+    }
+
+    .cartao__link {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #fff;
+        justify-self: flex-end;
+    }
+
+    .cartao__lista {
+        display: grid;
+        row-gap: 16px;
+        grid-column: span 2;
+    }
+
+    .cartao__item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
+    }
+
+    .cartao__item-thumbnail {
+        width: 32px;
+        grid-row: span 2;
+    }
+
+    .cartao__item-titulo {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: 700;
+    }
+
+    .cartao__item-perfil {
+        font-size: 0.8rem;
+        color: #fff;
+    }
+
+    .cartao__botao--destaque {
+        width: 100%;
+        height: 10px;
+        justify-self: flex-start;
+    }
+
+    .secao-carne .cartao img {
+        width: 90%;
+        height: 200px;
+        display: table;
+        margin: auto;
+    }
+
+    .secao-carne .cartao #linguica-calabresa {
+        width: 100%;
+    }
+
+    #margarina {
+        height: 150px;
+        width: 80%;
+        margin: auto;
+        display: table;
+    }
+
+
+    #temperos {
+        height: 200px;
+        width: 30%;
+        margin: auto;
+        display: table;
+    }
+
+    #graos {
+        height: 200px;
+        width: 80%;
+        margin: auto;
+        display: table;
+    }
+
+    .secao-doces .cartao img {
+        height: 200px;
+        width: 80%;
+        margin: auto;
+        display: table;
+    }
+
+    #leite-moca {
+        width: 70%;
+    }
+
+    #lacta-bar {
+        width: 90%;
+    }
+
+
+    .secao-bebidas img {
+        height: 200px;
+        width: 50%;
+        margin: auto;
+        display: table;
+    }
+
+    .secao-bebidas .cartao .cartao__imagem--vinhos {
+        width: 35%;
+    }
+
+    .secao-higiene img {
+        height: 200px;
+        width: 60%;
+        margin: auto;
+        display: table;
+    }
+
+
+    #veja {
+        width: 30%;
+    }
+
+    .secao-higiene .cartao #cartao__imagem--toalha-umedecida {
+        width: 80%;
+
+    }
+
+    #papel-neve {
+        height: 170px;
+        width: 100%;
+    }
+
+    .secao-verdura .cartao img {
+        width: 90%;
+        height: 200px;
+        display: table;
+        margin: auto;
+    }
+
+    .secao-frutas .cartao img {
+        width: 98%;
+        height: 200px;
+        display: table;
+        margin: auto;
+    }
+
+    #abacaxi {
+        height: 200px;
+        width: 40%;
+        margin: auto;
+        display: table;
+    }
+
+    .secao-peixes .cartao img {
+        width: 100%;
+        height: 200px;
+        display: table;
+        margin: auto;
+    }
+
+    .secao-peixes .cartao #camarao-oceani {
+        width: 65%;
+    }
+}
+
+.secao {
+    display: grid;
+    gap: 16px;
+}
+
+.secao-contato h3 {
+    margin-bottom: 16px;
+}
+
+.secao-contato #mapa {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #053e69;
+    width: 100%;
+    grid-column: span 2;
+    padding: 20px;
+    box-shadow: 2px 0 4px 4px rgba(10, 0, 58, 0.3);
+    box-sizing: border-box;
+}
+
+#brands-container ul {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#brands-container ul li a i:active {
+    color: #ccc;
+}
+
+#names-container {
+    padding: 20px;
+}
+
+#names-container ul {
+    display: flex;
+    width: 35%;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+#names-container ul li {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .cartao__imagem--mobile {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contato-info {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 20px;
+    }
+
+    #contato-info__maisinfo div {
+        line-height: 30px;
+        margin-bottom: 30px;
+        font-size: 13pt;
+    }
+
+    .secao-contato form {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    .secao-contato form input,
+    textarea {
+        margin-bottom: 20px;
+        border-radius: 20px;
+        padding: 7px;
+        color: black;
+        font-weight: 600;
+    }
+
+    .hero-btn {
+        background-color: #0480DC;
+        border-radius: 10px;
+        padding: 10px;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .hero-btn:active {
+        background-color: #1090f2;
+    }
+
+}
+
+
+@media screen and (min-width:1300px) {
+
+    .secao-contato h3 {
+        margin-bottom: 16px;
+    }
+
+    .secao-contato #mapa {
+        width: 100%;
+        height: 400px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .contato-info {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    #contato-info__maisinfo div {
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .secao-contato form {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .secao-contato form input,
+    textarea {
+        margin-bottom: 20px;
+        border-radius: 20px;
+        padding: 7px;
+        color: black;
+    }
+
+    .hero-btn {
+        background-color: #0480DC;
+        border-radius: 10px;
+        padding: 10px;
+        width: 30%;
+        margin: auto;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .hero-btn:hover {
+        background-color: #1090f2;
+        transform: scale(1.05);
+    }
+
+
+    footer {
+        background-color: #053e69;
+        width: 100%;
+        grid-column: 2;
+        padding: 20px;
+        box-shadow: 2px 0 4px 4px rgba(10, 0, 58, 0.3);
+        box-sizing: border-box;
+    }
+
+    #brands-container ul {
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    #brands-container ul li a i:hover {
+        color: #ccc;
+    }
+
+    #names-container {
+        padding: 20px;
+    }
+
+    #names-container ul {
+        display: flex;
+        width: 60%;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+    #names-container ul li {
+        margin-left: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    #names-container ul li:hover {
+        color: #ccc;
+    }
+}
+
+#names-container {
+    text-align: center;
+}
+
+@media screen and (min-width: 1300px) {
+    .secao {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .destaque-video {
+        grid-area: destaque-video;
+    }
+
+    .videos-recentes {
+        grid-area: videos-recentes;
+    }
+
+    .secao-carne {
+        grid-area: secao-carne;
+    }
+
+    .destaque-produtos {
+        grid-area: destaque-produtos;
+    }
+
+    .produtos-recentes {
+        grid-area: produtos-recentes;
+    }
+
+    .secao-margarina {
+        grid-area: secao-margarina;
+    }
+
+    .secao-doces {
+        grid-area: secao-doces;
+    }
+
+    .secao-bebidas {
+        grid-area: secao-bebidas;
+    }
+
+    .secao-higiene {
+        grid-area: secao-higiene;
+    }
+
+    .secao-verdura {
+        grid-area: secao-verdura;
+    }
+
+    .secao-frutas {
+        grid-area: secao-frutas;
+    }
+
+    .secao-peixes {
+        grid-area: secao-peixes;
+    }
+
+    .secao-graos {
+        grid-area: secao-graos;
+    }
+
+    .secao-temperos {
+        grid-area: secao-temperos;
+    }
+
+    .secao-contato {
+        grid-area: secao-contato;
+    }
+}
